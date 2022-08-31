@@ -20,10 +20,10 @@ public class Temperature {
     )
     @Column(name = "ID", nullable = false)
     private UUID id;
-    @Column(name = "CITY", nullable = false)
+    @Column(name = "CITY")
     private String city;
 
-    @Column(name = "COUNTRY", nullable = false)
+    @Column(name = "COUNTRY")
     private String country;
 
     @Column(name = "CURRENT_TEMPERATURE", nullable = false)
