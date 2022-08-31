@@ -47,6 +47,7 @@ public class WeatherController {
         return new TemperatureDto()
                 .setCity(temperature.getCity())
                 .setCountry(temperature.getCountry())
-                .setCurrentTemperature(temperature.getCurrentTemperature());
+                .setCurrentTemperature(temperature.getCurrentTemperature())
+                .setDate(temperature.getDate());
     }
 }
