@@ -10,4 +10,6 @@ public interface TemperatureService {
     List<Temperature> retrieveTemperature(String city, String country, LocalDate date);
 
     void saveTemperature(List<Temperature> temperatureList);
+
+    void updateDataWeather();
 }

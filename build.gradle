@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.7.3'
     id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+    id "io.freefair.lombok" version "6.6-rc1"
     id 'java'
 }
 
@@ -13,8 +14,28 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+    implementation 'io.swagger.core.v3:swagger-annotations:2.2.1'
+    implementation 'org.openapitools:jackson-databind-nullable:0.2.3'
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:3.1.5"
+    implementation "io.github.openfeign:feign-okhttp:12.0"
+    implementation "io.github.openfeign:feign-httpclient:12.0"
+    implementation "io.github.openfeign:feign-jackson:12.0"
+    implementation "io.github.openfeign:feign-slf4j:12.0"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:2.7.5"
+    implementation "org.springframework.session:spring-session-jdbc"
+    implementation "org.postgresql:postgresql"
+    implementation "org.hibernate:hibernate-envers"
+    implementation "net.logstash.logback:logstash-logback-encoder:6.4"
+    implementation "org.codehaus.janino:janino:3.1.6"
+    implementation "org.springframework.boot:spring-boot-starter-validation"
+    implementation "org.jetbrains:annotations:23.0.0"
+    implementation "jakarta.xml.ws:jakarta.xml.ws-api:2.3.3"
+    implementation "com.sun.xml.messaging.saaj:saaj-impl:1.5.2"
+    implementation "io.pivotal.spring.cloud:spring-cloud-services-dependencies:3.1.+"
+    implementation "com.google.guava:guava:31.1-jre"
+
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.json:json:20090211'
